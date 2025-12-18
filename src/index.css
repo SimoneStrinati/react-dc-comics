@@ -60,3 +60,30 @@ main h2 {
   padding: 40px 0;
 
 }
+
+/*************************BlueBand Section****************************************/
+
+.blue-band {
+  background-color: #0282f9;
+  padding: 40px 0;
+}
+
+.blue-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blue-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.blue-item img {
+  height: 50px;
+}
