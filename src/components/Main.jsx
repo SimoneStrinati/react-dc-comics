@@ -1,7 +1,9 @@
-function Main () {
+function Main() {
     return (
-        <div>contenuto</div>
-    )
+        <main>
+            <h2>--Content goes here--</h2>
+        </main>
+    );
 }
 
 export default Main;
