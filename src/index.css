@@ -8,6 +8,8 @@ body {
   font-family: sans-serif;
   min-height: 100vh;
   background-color: white;
+  background-image: url(/footer-bg.jpg);
+  background-size: cover;
 }
 
 
@@ -86,4 +88,49 @@ main h2 {
 
 .blue-item img {
   height: 50px;
+}
+
+/*******************Footer CSS************************************/
+
+.footer-top {
+  
+  padding: 50px 0;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: white;
+}
+
+.footer-logo img {
+  width: 450px;
+  opacity: 0.3;
 }
