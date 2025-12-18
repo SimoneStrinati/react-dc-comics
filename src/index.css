@@ -7,4 +7,56 @@
 body {
   font-family: sans-serif;
   min-height: 100vh;
+  background-color: white;
+}
+
+
+/*********************Header CSS*****************************/
+
+header {
+  background-color: white;
+}
+
+.flex-container {
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 4rem;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 40px 0;
+  display: inline-block;
+  position: relative;
+}
+
+/************************Main CSS******************************/
+
+main {
+  background-color: black;
+  color: white;
+}
+
+main h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 0;
+
 }
