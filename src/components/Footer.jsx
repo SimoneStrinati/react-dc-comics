@@ -1,9 +1,11 @@
+import style from "./Footer.module.css";
+
 function Footer() {
     return (
-        <footer className="footer-top">
-            <div className="footer-container">
+        <footer className= {style.footer}>
+            <div className={style.footerContainer}>
 
-                <div className="footer-links">
+                <div className= {style.footerLinks}>
                     <div>
                         <h4>DC Comics</h4>
                         <ul>
@@ -52,7 +54,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="footer-logo">
+                <div className= {style.footerImg}>
                     <img src="/dc-logo-bg.png" alt="DC Logo"/>
                 </div>
 

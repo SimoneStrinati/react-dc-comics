@@ -1,0 +1,11 @@
+.main {
+  background-color: black;
+  color: white;
+}
+
+.main h2 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+
+}

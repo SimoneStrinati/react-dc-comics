@@ -1,9 +1,11 @@
+import style from "./Header.module.css";
+
 function Header() {
     return (
-        <header>
+        <header className={style.header}>
 
-            <div className="flex-container">
-                <img id="logo" src="/dc-logo.png" alt="Logo DC Comics" />
+            <div className={style.headerFlex}>
+                <img className={style.logo} src="/dc-logo.png" alt="Logo DC Comics" />
 
                 <nav>
                     <ul>
