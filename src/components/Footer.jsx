@@ -1,61 +1,98 @@
 import style from "./Footer.module.css";
 
 function Footer() {
+
+    const dcComicsLink = [
+        { id: 1, label: "Characters", url: "#"},
+        { id: 2, label: "Comics", url: "#"},
+        { id: 3, label: "Movies", url: "#"},
+        { id: 4, label: "TV", url: "#"},
+        { id: 5, label: "Games", url: "#"},
+        { id: 6, label: "Videos", url: "#"},
+        { id: 7, label: "News", url: "#"},
+    ];
+
+    const shopLink = [
+        { id: 1, label: "Shop DC", url: "#"},
+        { id: 2, label: "Shop DC Collectibles", url: "#"}
+    ];
+
+    const DCLinks = [
+        { id: 1, label: "Terms Of Use", url: "#"},
+        { id: 2, label: "Privacy Policy", url: "#"},
+        { id: 3, label: "Ad Choices", url: "#"},
+        { id: 4, label: "Advertising", url: "#"},
+        { id: 5, label: "Jobs", url: "#"},
+        { id: 6, label: "Subscriptions", url: "#" },
+        { id: 7, label: "Talent Workshops", url: "#" },
+        { id: 8, label: "CPSC Certificates", url: "#" },
+        { id: 9, label: "Ratings", url: "#" },
+        { id: 10, label: "Shop Help", url: "#" },
+        { id: 11, label: "Contact Us", url: "#" }
+    ];
+
+    const sitesLink = [
+        { id: 1, label: "DC", url: "#" },
+        { id: 2, label: "MAD Magazine", url: "#" },
+        { id: 3, label: "DC Kids", url: "#" },
+        { id: 4, label: "DC Universe", url: "#" },
+        { id: 5, label: "DC Power Visa", url: "#" },
+    ]
+
+
+
+
     return (
-        <footer className= {style.footer}>
+        <footer className={style.footer}>
             <div className={style.footerContainer}>
 
-                <div className= {style.footerLinks}>
+                <div className={style.footerLinks}>
                     <div>
                         <h4>DC Comics</h4>
                         <ul>
-                            <li>Characters</li>
-                            <li>Comics</li>
-                            <li>Movies</li>
-                            <li>TV</li>
-                            <li>Games</li>
-                            <li>Videos</li>
-                            <li>News</li>
+                            {
+                                dcComicsLink.map(comics => {
+                                    return <li><a href={comics.url} key= {"DCComics-" + comics.id}>{comics.label}</a></li>
+                                })
+                            }
+
                         </ul>
 
                         <h4>Shop</h4>
                         <ul>
-                            <li>Shop DC</li>
-                            <li>Shop DC Collectibles</li>
+                            {
+                                shopLink.map(shop => {
+                                    return <li><a href={shop.url} key= {"ShopLink-" + shop.id}>{shop.label}</a></li>
+                                })
+                            }
                         </ul>
                     </div>
 
                     <div>
                         <h4>DC</h4>
                         <ul>
-                            <li>Terms Of Use</li>
-                            <li>Privacy Policy</li>
-                            <li>Ad Choices</li>
-                            <li>Advertising</li>
-                            <li>Jobs</li>
-                            <li>Subscriptions</li>
-                            <li>Talent Workshops</li>
-                            <li>CPSC Certificates</li>
-                            <li>Ratings</li>
-                            <li>Shop Help</li>
-                            <li>Contact Us</li>
+                            {
+                                DCLinks.map(DCLink => {
+                                    return <li><a href={DCLinks.url} key= {"DCLinks-" + DCLinks.id}>{DCLink.label}</a></li>
+                                })
+                            }
                         </ul>
                     </div>
 
                     <div>
                         <h4>Sites</h4>
                         <ul>
-                            <li>DC</li>
-                            <li>MAD Magazine</li>
-                            <li>DC Kids</li>
-                            <li>DC Universe</li>
-                            <li>DC Power Visa</li>
+                            {
+                                sitesLink.map(site => {
+                                    return <li><a href={site.url} key= {"Sites-" + site.id}>{site.label}</a></li>
+                                })
+                            }
                         </ul>
                     </div>
                 </div>
 
-                <div className= {style.footerImg}>
-                    <img src="/dc-logo-bg.png" alt="DC Logo"/>
+                <div className={style.footerImg}>
+                    <img src="/dc-logo-bg.png" alt="DC Logo" />
                 </div>
 
             </div>
