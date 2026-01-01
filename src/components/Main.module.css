@@ -1,11 +1,46 @@
 .main {
   background-color: black;
   color: white;
+  padding-bottom: 40px;
 }
 
-.main h2 {
+.main h4 {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+
+}
+
+.comicBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+.card {
+  width: 15%;
+  padding: 2rem;
+
+}
+
+.card img {
+  width: 100%;
+}
+
+.btnFlex {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+}
+
+.loadButton {
+  background-color: #0282f9;
+  color: white;
+  font-weight: bold;
+  padding: 10px 50px; 
+  border: none;
 
 }
