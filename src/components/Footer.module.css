@@ -1,6 +1,8 @@
 .footer{
   padding: 50px 0;
   color: white;
+  background-image: url(/footer-bg.jpg);
+  background-size: cover;
 }
 
 .footerContainer {
