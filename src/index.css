@@ -10,5 +10,17 @@ body {
   background-color: white;
 }
 
+#jumbotron {
+  height: 22rem;
+
+}
+
+#jumbotron img {
+	object-fit: cover;
+	object-position: top;
+	height: 100%;
+	width: 100%;
+}
+
 
 
