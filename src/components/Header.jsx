@@ -64,8 +64,8 @@ function Header() {
                         <li><a href="">News</a></li>
                         <li><a href="">Shop</a></li> */}
                         {
-                        links.map((link, i)=> {
-                        return <li key={links.id}><a href="">{link.text}</a></li>})
+                        links.map((link)=> {
+                        return <li key={link.id}><a href="">{link.text}</a></li>})
                         }
                     </ul>
                 </nav>

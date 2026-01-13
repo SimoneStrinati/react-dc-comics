@@ -52,7 +52,7 @@ function Footer() {
                         <ul>
                             {
                                 dcComicsLink.map(comics => {
-                                    return <li><a href={comics.url} key= {"DCComics-" + comics.id}>{comics.label}</a></li>
+                                    return <li key= {"DCComics-" + comics.id}><a href={comics.url}>{comics.label}</a></li>
                                 })
                             }
 
@@ -62,7 +62,7 @@ function Footer() {
                         <ul>
                             {
                                 shopLink.map(shop => {
-                                    return <li><a href={shop.url} key= {"ShopLink-" + shop.id}>{shop.label}</a></li>
+                                    return <li  key= {"ShopLink-" + shop.id}><a href={shop.url}>{shop.label}</a></li>
                                 })
                             }
                         </ul>
@@ -73,7 +73,7 @@ function Footer() {
                         <ul>
                             {
                                 DCLinks.map(DCLink => {
-                                    return <li><a href={DCLinks.url} key= {"DCLinks-" + DCLinks.id}>{DCLink.label}</a></li>
+                                    return <li  key= {"DCLinks-" + DCLink.id}><a href={DCLinks.url}>{DCLink.label}</a></li>
                                 })
                             }
                         </ul>
@@ -84,7 +84,7 @@ function Footer() {
                         <ul>
                             {
                                 sitesLink.map(site => {
-                                    return <li><a href={site.url} key= {"Sites-" + site.id}>{site.label}</a></li>
+                                    return <li key= {"Sites-" + site.id}><a href={site.url}>{site.label}</a></li>
                                 })
                             }
                         </ul>

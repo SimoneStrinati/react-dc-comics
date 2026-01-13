@@ -7,7 +7,7 @@ function Main() {
             <div className={style.comicBox}>
                 {
                     comics.map((comic) => {
-                        return <div className={style.card}>
+                        return <div key={comic.id} className={style.card}>
 
                             <img src={comic.thumb} alt={comic.description} />
                             <h4>{comic.title}</h4>
