@@ -1,5 +1,6 @@
 import style from "./Main.module.css";
 import comics from "../data/comics.js";
+import ComicCard from "./ComicCard.jsx"
 
 function Main() {
     return (
@@ -7,13 +8,7 @@ function Main() {
             <div className={style.comicBox}>
                 {
                     comics.map((comic) => {
-                        return <div key={comic.id} className={style.card}>
-
-                            <img src={comic.thumb} alt={comic.description} />
-                            <h4>{comic.title}</h4>
-
-                        </div>
-
+                        return <ComicCard comic={comic}/>
                     })
                 }
 
